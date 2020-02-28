@@ -12,20 +12,27 @@ while True:
 	else:
 		print('Congrats, you got the right number')
 		break
-print('Total guesses %d times' % counter)
+#use f-string
+print (f"Total guesses {counter} times")
 
 '''
-insert:70
-smaller
-insert:65
-smaller
-insert:50
-smaller
-insert:20
-larger
-insert:30
-larger
 insert:40
+larger
+insert:60
+larger
+insert:80
+larger
+insert:90
+larger
+insert:95
+larger
+insert:99
+smaller
+insert:97
 Congrats, you got the right number
-Total guesses 6 times
+Total guesses 7 times
+
+#Change to f-string
+print (f"Total guesses {counter} times")
+print('Total guesses %d times' % counter)
 '''
