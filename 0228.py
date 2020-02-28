@@ -1,17 +1,31 @@
-K_letters = []
+import random
 
-for letter in 'Kaitlyn':
-	K_letters.append(letter)
-#use for and append
-
-print(K_letters)
-
-K_letters = [letter for letter in 'Kaitlyn']
-#use list comprehension
-
-print(K_letters)
+answer = random.randint(1, 100)
+counter = 0
+while True:
+	counter += 1
+	number = int(input('insert:'))
+	if number < answer:
+		print('larger')
+	elif number > answer:
+		print('smaller')
+	else:
+		print('Congrats, you got the right number')
+		break
+print('Total guesses %d times' % counter)
 
 '''
-['K', 'a', 'i', 't', 'l', 'y', 'n']
-['K', 'a', 'i', 't', 'l', 'y', 'n']
+insert:70
+smaller
+insert:65
+smaller
+insert:50
+smaller
+insert:20
+larger
+insert:30
+larger
+insert:40
+Congrats, you got the right number
+Total guesses 6 times
 '''
