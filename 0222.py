@@ -1,7 +1,7 @@
 list1 = ["apple", "chocolate", "candy", "me"]
 for index, item in enumerate(list1):
 
-	print index, item
+	print(index, item)
 
 """
 0 apple
